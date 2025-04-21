@@ -1,0 +1,161 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body {
+      background: url('backgroundimage.jpg');
+      margin: 0;
+      padding: 0;
+    }
+
+    .logo {
+      width: 65px;
+      height: 60px;
+      border: 5px solid gray;
+      border-radius: 100px;
+      position: absolute;
+      left: 30px;
+      top: 0px; 
+    }
+
+    nav {
+      list-style: none;
+      background-color: blue;
+      overflow: hidden;
+      position: flex;
+     
+      font-family: bold;
+      margin: 0px;
+      border-radius: 100px;
+    }
+
+  
+    nav a {
+      float: right;
+      color: white;
+      text-align: center;
+      padding: 25px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      font-size:20px;
+    }
+
+  
+  nav a:hover {
+      background-color: white;
+      color: blue;
+    }
+
+
+    nav li a {
+      display: block;
+      color: white;
+     
+      text-decoration: none;
+      text-align: center;
+    }
+
+    nav li ul.dropdown li {
+      display: block;
+     
+    }
+
+    nav li ul.dropdown {
+    
+      background: blue;
+      position: absolute;
+      left: 700px;
+      top: 50px;
+      width:160px;
+      z-index: 999;
+ border-radius:20px;
+      display: none;
+    
+    }
+
+    nav li:hover ul.dropdown {
+      display: block;
+    }
+
+      nav li ul.dropdown li a {
+      padding: 15px 20px;
+      transition: background-color 0.3s ease;
+      display: block;
+      width: 100%;
+ font-size: 16px;
+    }
+
+    nav li ul.dropdown li a:hover {
+      background-color:white;;
+    }
+
+
+    nav li ul.dropdown li {
+      border-bottom: 1px solid #003366;
+    }
+
+  
+    nav li ul.dropdown .main-dropdown-button {
+      background-color: #003366;
+      color: white;
+      font-weight: bold;
+         
+    }
+
+   
+    nav li ul.dropdown .main-dropdown-button a {
+      padding: 25px 20px;
+    }
+
+    .head1 {
+      text-align: left;
+      font-size: 20px;
+      font-family: serif;
+      color: #00009c;
+      position: absolute;
+      left: 55px;
+      top: 360px;
+    }
+
+    h1 {
+      font-size: 50px;
+    }
+    a{
+ font-size: 20px;
+}
+  </style>
+</head>
+
+<body>
+
+<nav >
+  <img class="logo" src="logo.jpg"/>
+  <a href="adminlogout.html"><i class="fa-solid fa-right-from-bracket"></i>&nbsp;Logout</a>
+  <a href="requests.php"><i class="fa-solid fa-bell"></i>&nbsp;&nbsp;Requests</a>
+  <a href="report.php"><i class="fa-solid fa-book-medical"></i>&nbsp;Report</a>
+  <a href="Status.php"><i class="fa-solid fa-bars-progress"></i>&nbsp;Status</a>
+  <li>
+    <div class="main-dropdown-button">
+      <a href="#"><i class="fa-sharp fa-solid fa-truck-medical"></i>&nbsp;Medicines</a>
+    </div>
+    <ul class="dropdown">
+      <li><a href="addfunctionality.php">Add Medicines</a></li>
+      <li><a href="view.php">View Medicines</a></li>
+      <li><a href="upfun.php">Update Medicines</a></li>
+      <li><a href="delfun.php">Delete Medicines</a></li>
+    </ul>
+  </li>
+  <a href="#"><i class="fa-solid fa-house"></i>&nbsp;Home</a>
+</nav>
+
+<center>
+  <h1 style="font-size:50px;">MEDIPLUS</h1>
+</center>
+
+<pre>
+<h1 class="head1">                WE ARE HERE FOR YOUR CARE,
+ 
+               WE ARE THE BEST PHARMACY ,
+ 
+               WE ARE HERE FOR YOUR 24/7 ANY HELP JUST CALL US</h1>
+</html>

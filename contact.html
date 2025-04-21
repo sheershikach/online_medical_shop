@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact MedPlus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            background-image: url('sample3.jpeg');
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            margin: 0;
+            padding: 0;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+        .logo {
+            width: 65px;
+            height: 60px;
+            border: 5px solid gray;
+            border-radius: 100px;
+            position: absolute;
+            left: 30px;
+            top: 0px; 
+        }
+
+        nav {
+            list-style: none;
+            background-color: blue;
+            overflow: hidden;
+            position: flex;
+            font-family: bold;
+            margin: 0px;
+            border-radius: 100px;
+        }
+  nav {
+      font-family: 'Arial', sans-serif;
+    }
+        nav a {
+            float: right;
+            color: white;
+            text-align: center;
+            padding: 25px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: blue;
+        }
+
+        nav li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav li ul.dropdown li {
+            display: block;
+        }
+
+        nav li ul.dropdown {
+            background: blue;
+            position: absolute;
+            left: 1000px;
+            top: 50px;
+            width: 140px;
+            z-index: 999;
+            border-radius: 20px;
+            display: none;
+        }
+
+        nav li:hover ul.dropdown {
+            display: block;
+        }
+
+        nav li ul.dropdown li a {
+            padding: 15px 20px;
+            transition: background-color 0.3s ease;
+            display: block;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        nav li ul.dropdown li a:hover {
+            background-color:white;
+        }
+
+        nav li ul.dropdown li {
+            border-bottom: 1px solid #003366;
+        }
+
+        nav li ul.dropdown .main-dropdown-button {
+            background-color: #003366;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav li ul.dropdown .main-dropdown-button a {
+            padding: 25px 20px;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+            margin: 10px auto;
+            border-radius: 10px;
+            max-width: 600px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            color: #007bff; 
+            margin-bottom: 15px; /* Increased margin */
+        }
+
+        .content p {
+            color: black; /* Changed paragraph color */
+            font-size: 18px; /* Increased font size */
+            margin-bottom: 20px; /* Increased margin */
+        }
+
+        form {
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 20px;
+            border: 1px solid #007bff; /* Border color */
+            box-sizing: border-box;
+            font-size: 16px;
+            outline: none;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+            display: block;
+        }
+
+        .success-message {
+            color: #4CAF50;
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+        .error-message {
+            color: #f44336;
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+     
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            border-color: #007bff;
+        }
+
+        input[type="submit"] {
+            background-color: #0056b3;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #003366;
+        }
+  
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder,
+    textarea::placeholder {
+        color: lightblack;       
+    }
+
+
+    input[type="text"]:focus::placeholder,
+    input[type="email"]:focus::placeholder,
+    textarea:focus::placeholder {
+        color: transparent; 
+    }
+
+    </style>
+</head>
+<body>
+<nav>
+    <img class="logo" src="logo.jpg"/>
+    <a href="cart.php"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Cart</a>
+    <a href="about.html"><i class="fa-solid fa-address-card"></i>&nbsp;About</a>
+    <li>
+        <div class="main-dropdown-button">
+            <a href="#"><i class="fa-sharp fa-solid fa-shop"></i>&nbsp;Orders</a>
+        </div>
+        <ul class="dropdown">
+            <li><a href="customer_status.php">New Orders</a></li>
+            <li><a href="order_history.php">Orders History</a></li>
+            <li><a href="orderpage.php">Buy Now</a></li>
+        </ul>
+    </li>
+    <a href="medicines.php"><i class="fa-solid fa-house-medical"></i>&nbsp;Medicine</a>
+    <a href="customer_home.html"><i class="fa-solid fa-house-user"></i>&nbsp;Home</a>
+</nav>
+<div class="content">
+    <h2>Contact Us</h2>
+    <p>Feel free to reach out to us for any inquiries or feedback.</p>
+    <form id="contactForm" action="contact.php" method="post" onsubmit="return validateForm()">
+        <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+        <span id="nameError" class="error"></span><br>
+        <input type="email" id="email" name="email" placeholder="Your Email" required><br>
+        <span id="emailError" class="error"></span><br>
+        <input type="text" id="number" name="number" placeholder="Your Number" required><br>
+        <span id="numberError" class="error"></span><br>
+        <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea><br>
+        <input type="submit" value="Submit">
+        <span id="successMessage" class="success-message" style="display:none;"></span>
+        <span id="errorMessage" class="error-message" style="display:none;"></span>
+    </form>
+</div>
+<script>
+    function validateForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var number = document.getElementById("number").value;
+        var namePattern = /^[a-zA-Z\s]+$/;
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        var numberPattern = /^[0-9]{10}$/;
+        var isValid = true;
+
+        if (!name.match(namePattern)) {
+            document.getElementById("nameError").innerHTML = "Please enter a valid name (only alphabets and spaces)";
+            isValid = false;
+        } else {
+            document.getElementById("nameError").innerHTML = "";
+        }
+
+        if (!email.match(emailPattern)) {
+            document.getElementById("emailError").innerHTML = "Please enter a valid email";
+            isValid = false;
+        } else {
+            document.getElementById("emailError").innerHTML = "";
+        }
+
+        if (!number.match(numberPattern)) {
+            document.getElementById("numberError").innerHTML = "Please enter a valid 10-digit phone number";
+            isValid = false;
+        } else {
+            document.getElementById("numberError").innerHTML = "";
+        }
+
+        document.getElementById("successMessage").style.display = "none";
+
+        return isValid;
+    }
+</script>
+</body>
+</html>

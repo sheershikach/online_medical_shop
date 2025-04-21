@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+    body {
+        background: url('about.jpeg');
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+ .logo {
+      width: 65px;
+      height: 64px;
+      border: 5px solid gray;
+      border-radius: 100px;
+      position: absolute;
+      left: 30px;
+      top: 0px; 
+    }
+    nav {
+      list-style: none;
+      background-color: blue;
+      overflow: hidden;
+      position: flex;
+     
+      font-family: bold;
+      margin: 0px;
+      border-radius: 100px;
+    }
+    nav {
+      font-family: 'Arial', sans-serif;
+    }
+  
+    nav a {
+      float: right;
+      color: white;
+      text-align: center;
+      padding: 25px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      font-size:20px;
+    }
+
+  
+  nav a:hover {
+      background-color: white;
+      color: blue;
+    }
+
+
+    nav li a {
+      display: block;
+      color: white;
+     
+      text-decoration: none;
+      text-align: center;
+    }
+
+    nav li ul.dropdown li {
+      display: block;
+     
+    }
+
+    nav li ul.dropdown {
+    
+      background: blue;
+      position: absolute;
+      left: 1000px;
+      top: 50px;
+      width:140px;
+      z-index: 999;
+ border-radius:20px;
+      display: none;
+    
+    }
+
+    nav li:hover ul.dropdown {
+      display: block;
+    }
+
+      nav li ul.dropdown li a {
+      padding: 15px 20px;
+      transition: background-color 0.3s ease;
+      display: block;
+      width: 100%;
+ font-size: 16px;
+    }
+
+    nav li ul.dropdown li a:hover {
+      background-color:white;;
+    }
+
+
+    nav li ul.dropdown li {
+      border-bottom: 1px solid #003366;
+    }
+
+  
+    nav li ul.dropdown .main-dropdown-button {
+      background-color: #003366;
+      color: white;
+      font-weight: bold;
+         
+    }
+
+   
+    nav li ul.dropdown .main-dropdown-button a {
+      padding: 25px 20px;
+    }
+
+.content {
+    padding: 40px;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 60px auto;
+    border-radius: 20px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    line-height: 1.8;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.content img {
+    width: 320px;
+    height: auto; /* Ensure image maintains aspect ratio */
+    margin-right: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow to image */
+}
+
+.content h2 {
+    color: #003366;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin-bottom: 20px;
+    text-indent: 40px; /* Adjust indentation */
+}
+
+.content a {
+    color: blue;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}</style>
+</head>
+
+<body>
+<nav>
+    <img class="logo" src="logo.jpg"/>
+    <a href="cart.php"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Cart</a>
+    <a href="about.html"><i class="fa-solid fa-address-card"></i>&nbsp;About</a>
+  <li>
+    <div class="main-dropdown-button">
+      <a href="#"><i class="fa-sharp fa-solid fa-shop"></i>&nbsp;Orders</a>
+    </div>
+    <ul class="dropdown">
+      <li><a href="customer_status.php">New Orders</a></li>
+      <li><a href="order_history.php">Orders History</a></li>
+     <li><a href="orderpage.php">Buy Now</a></li>
+    </ul>
+  </li>
+    <a href="medicines.php"><i class="fa-solid fa-house-medical"></i>&nbsp;Medicine</a>
+    <a href="customer_home.html"><i class="fa-solid fa-house-user"></i>&nbsp;Home</a>
+</nav>
+
+<div class="content">
+    <img src="cartcart.jpeg" alt="Image" width="200"> <!-- Replace your_image.jpg with your image -->
+    <div>
+        <h2>About MedPlus</h2>
+        <p>MedPlus is a pharmacy retailer that offers a wide range of prescription and over-the-counter medicines. Established in 2006 by Madhukar Gangadi, MedPlus has grown significantly and expanded its presence across various cities and towns in India. It operates both offline retail stores and an online pharmacy platform, offering a variety of healthcare products and services.</p>
+       
+        <h2 style="text-align: center;"><a href="Contact.html">Contact us...</a></h2>
+    </div>
+</div>
+
+</body>
+</html>
